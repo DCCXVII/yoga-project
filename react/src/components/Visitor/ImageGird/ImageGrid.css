@@ -1,0 +1,41 @@
+.image-grid-container {
+  margin: 20px 50px 0px 50px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+  transform: scale(1.1);
+}
+
+.image-grid-titre{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.image-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255);
+  color: #000;
+  padding: 5px 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+}

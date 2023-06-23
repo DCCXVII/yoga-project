@@ -1,0 +1,35 @@
+.grey-cover-header {
+  background-color: var(--gray-2-light, #fafafa);
+  align-items: center;
+  text-align: center;
+  font-family: var(--first-font, "Montserrat", sans-serif);
+  width: 100%;
+  padding: 40px 15px 25px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 13px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.grey-centered-content {
+  padding: 70px;
+}
+
+.grey-cover-header .grey-centered-content .center-h1 {
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+
+.grey-cover-header .grey-centered-content .lead {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}

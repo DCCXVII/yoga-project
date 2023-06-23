@@ -1,0 +1,11 @@
+.big-container {
+    margin: 40px;
+    padding: 0;
+  }
+  
+  .instructor-packs-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+  

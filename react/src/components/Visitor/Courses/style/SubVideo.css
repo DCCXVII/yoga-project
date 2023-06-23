@@ -1,0 +1,191 @@
+.Sub-video-container {
+  display: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.Sub-video-background-image {
+  position: relative;
+  width: 100%;
+  max-width: 899px;
+  margin: 0 auto;
+  transform: scale(1.25);
+}
+
+.Sub-video-course-title {
+  width: 100%;
+  line-height: 180%;
+  margin-top: 20px;
+}
+
+.background-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.Subbed-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.start-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  line-height: 400%;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.start-now h1 {
+  font-size: 36px;
+}
+
+.start-now a {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 200%;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+}
+
+.Sub-video-descrip-cours-paragraph {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  font-family: var(--third-font);
+  width: 90%;
+}
+
+.Sub-video-descrip-cours {
+  width: 70%;
+  line-height: 180%;
+  margin-top: 20px;
+}
+
+.Sub-video-cours-video-info {
+  margin-top: 160px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Sub-video-cours-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+  padding-bottom: 10px;
+  font-size: 1.9rem;
+  text-align: left;
+}
+
+.Sub-video-cours-title {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-right: 490px;
+}
+
+.video-instru-name {
+  position: absolute;
+  margin-left: 210px;
+  margin-top: 60px;
+  text-transform: capitalize;
+}
+
+.consultation3-btn3 {
+  position: absolute;
+  margin-top: 78px;
+  margin-left: 513px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px black solid;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 10px 35px 10px 35px;
+  background: #fff;
+  color: #000;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+
+.consultation3-btn3:hover {
+  background: #000;
+  color: #fff;
+}
+
+.video-instru-specia {
+  font-size: 19px;
+  position: absolute;
+  margin-left: 211px;
+  margin-top: 98px;
+  color: rgb(15, 15, 15);
+  font-family: var(--third-font);
+}
+
+.apercu-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.apercu {
+  font-size: 23px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  opacity: 0.7;
+  border-bottom: 1px solid #ccc;
+}
+
+.apercu-video-page {
+  margin-top: 200px;
+  text-align: center;
+  width: 100%;
+}
+
+.apercu-video-page-icon {
+  margin-right: 7px;
+  margin-bottom: 2px;
+}
+
+.apercu-video-page-details {
+  align-items: center;
+  text-align: center;
+}
+
+.cours-video-instru-info img {
+  width: 90px;
+  height: 90px;
+  left: 0;
+  float: left;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+
+.table-apercu {
+  margin-top: 60px;
+  margin-left: 72px;
+  width: 90%;
+  height: 8vw;
+}

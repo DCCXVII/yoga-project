@@ -1,0 +1,12 @@
+.big-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .instructor-courses-card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 70px;
+  }
+  

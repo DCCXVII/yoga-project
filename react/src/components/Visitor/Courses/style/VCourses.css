@@ -1,0 +1,10 @@
+.big-container-classes {
+  margin: 30px;
+  padding: 0;
+}
+
+.classes-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}

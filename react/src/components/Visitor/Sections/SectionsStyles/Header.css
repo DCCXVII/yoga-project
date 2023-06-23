@@ -1,0 +1,454 @@
+
+.visitor-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 5px 0;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 12.5%;
+  box-shadow: 0 0.15rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+.visitor-header a {
+  text-decoration: none;
+  font-size: 38px;
+}
+
+.visitor-nav-links .visitor-linka-res {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.visitor-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  position: relative;
+  width: 0;
+}
+
+/* 
+.visitor-nav-links.active{
+	height: 450px;
+	width: 100vw;
+	margin-left: -17px;
+} */
+
+.visitor-linka {
+  position: relative;
+  font-size: 20px;
+  margin: 17px 0 5px 20px 0;
+  text-decoration: none;
+  color: black;
+  cursor: text;
+  margin-right: 5px;
+}
+
+.visitor-logo {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 900;
+  margin-left: 70px;
+  margin-top: 0px;
+  font-size: 38px;
+}
+
+.visitor-logo-link {
+  text-decoration: none;
+}
+.visitor-linka::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.visitor-linka:hover::before {
+  width: 70%;
+}
+
+.visitor-nav-links.active .visitor-linka {
+  opacity: 1;
+}
+
+.visitor-nav-links {
+  width: 0;
+  margin-left: 120px;
+  margin-right: -70px;
+}
+
+.visitor-nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  list-style: none;
+  cursor: text;
+}
+
+.visitor-nav-links li a {
+  text-decoration: none;
+  padding: 0px 13px;
+  align-items: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.visitor-nav-links .visitor-linka-items{
+  font-size: 15px;
+  font-weight: 500;
+}
+.visitor-nav-links li .visitor-icon {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #000;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+.dropdown2 {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 160px;
+  z-index: 0;
+  top: 98%;
+  left: -35%;
+  margin-top: 9.8px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.2s;
+  padding-top: 4px;
+  border: 1px solid #eee;
+}
+
+.visitor-linka:hover .dropdown2 {
+  display: block;
+  transition-delay: 0s;
+}
+
+.dropdown2 li {
+  /* margin: 0; */
+  width: 100%;
+  display: block;
+}
+
+.dropdown2 li .classes-links {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown2 li .classes-links:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdown2 .classes-links {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.nav-link:hover + .dropdown2 .classes-links {
+  background-color: #ffffff;
+  display: block;
+}
+
+.dropdown2 .classes-links:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdown3 {
+  z-index: 0;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 160px;
+  top: 99%;
+  left: -13%;
+  margin-top: 10px;
+  padding-top: 5px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.2s;
+  border: 1px solid #eee;
+}
+
+.visitor-linka:hover .dropdown3 {
+  display: block;
+}
+
+.dropdown3 li {
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.dropdown3 li .events-links {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.dropdown3 .events-links {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown3 li .events-links:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdown3 .events-links {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+  margin-left: -10px;
+  margin-right: -10px;
+  text-align: center;
+}
+
+.nav-link:hover + .dropdown3 .events-links {
+  background-color: #ffffff;
+  display: block;
+}
+
+.dropdown3 .events-links:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdown1 {
+  display: none;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #fff;
+  width: 480px;
+  z-index: 1;
+  top: 98%;
+  left: -140%;
+  margin-top: 10px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.visitor-linka:hover .dropdown1 {
+  display: flex;
+}
+
+.dropdown1 li {
+  display: block;
+  flex-basis: 33.33%; /* Added this line */
+
+}
+
+.dropdown1 li .instructor-links {
+  display: block;
+  padding: 7px;
+  color: rgb(0, 0, 0, 0.8);
+  align-items: normal;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dropdown1 li .instructor-links .circle-photo {
+  width: 75%;
+  border-radius: 50%;
+}
+
+.dropdown1 li .instructor-links:hover {
+  background-color: #ffffff;
+}
+
+.dropdown1 .instructor-links {
+  display: flex;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover + .dropdown1 .instructor-links {
+  background-color: #ffffff;
+  display: block;
+}
+
+.dropdown1 .instructor-links:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.cta-div {
+  background-color: rgb(255, 255, 255);
+  width: 0;
+}
+
+.inscription-button {
+  border-radius: 50px;
+  padding: 9px 25px;
+  background-color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #ffffff;
+  margin-left: 230px;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+/* THE RESPOSIVE HEADER STYLE */
+
+@media (min-width: 270px) and (max-width: 300px) {
+  .visitor-header > .visitor-header a {
+    font-size: larger;
+  }
+}
+
+@media (min-width: 270px) and (max-width: 1280px) {
+  .visitor-header {
+    padding: 0 20px;
+    height: auto;
+  }
+  .visitor-header > .visitor-header {
+    margin-left: 0px;
+  }
+
+  .visitor-header .lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .visitor-header .lines .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .visitor-header .cta-div {
+    display: none;
+  }
+  .visitor-header .visitor-nav-links {
+    display: none;
+  }
+
+  .visitor-header .visitor-nav-links-respo {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.33) 0 30px 30px -20px;
+    left: 0;
+    top: 98%;
+    width: 100%;
+    background: #fffdfd;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    line-height: 600%;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .visitor-header .visitor-nav-links-respo:hover::before {
+    width: 0%;
+  }
+
+  .visitor-header .visitor-nav-links-respo .visitor-linka .visitor-icon {
+    display: none;
+  }
+
+  .visitor-header .visitor-nav-links-respo .visitor-linka a {
+    display: block;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 300;
+    border-block: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .visitor-header .visitor-nav-links-respo .visitor-linka-res a {
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  .visitor-header
+    .visitor-nav-links-respo
+    .visitor-linka-res
+    .visitor-linka-res {
+    border-block: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .visitor-header .visitor-nav-links-respo .visitor-linka .dropdown,
+  .visitor-header .visitor-nav-links-respo .visitor-linka .dropdown1,
+  .visitor-header .visitor-nav-links-respo .visitor-linka .dropdown3 {
+    display: none;
+  }
+
+  .visitor-header .visitor-nav-links .visitor-linka::before {
+    position: absolute;
+    width: 0;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 360px) {
+  .visitor-header .visitor-nav-links-respo .visitor-linka a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    border-block: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .visitor-header .visitor-nav-links-respo .visitor-linka-res a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}

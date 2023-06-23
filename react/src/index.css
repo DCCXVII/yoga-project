@@ -1,0 +1,252 @@
+/* ! ! ! this file contains the default variable declaration to applicate it,
+ just make an importation on the App.js file  ! ! ! */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Colors */
+:root {
+  --primary: #000;
+  --charcoal: #242424;
+  --mine: #3b3b3b;
+  --chicago: #636363;
+  --dawn: #a3a3a3;
+  --alto: #ccc;
+  --mercury: #e1e1e1;
+  --smoke: #f2f2f2;
+  --white: #fff;
+  --highlight-light: #f1e8dd;
+  --highlight-main: #ceb18f;
+  --highlight-medium: #ceb18f;
+  --highlight-dark: #826646;
+  --alert-light: #e7cccf;
+  --alert-main: #b00020;
+  --alert-medium: #b00020;
+  --alert-dark: #740031;
+  --success-light: #d8e1d5;
+  --success-main: #ceb18f;
+  --success-medium: #ceb18f;
+  --success-dark: #3c4b37;
+  --accent-light: #d7ddeb;
+  --accent-main: #7183b0;
+  --accent-medium: #7183b0;
+  --accent-dark: #384669;
+  --gray-2-light: #e1e1e1;
+  /* Swiper color */
+  --swiper-theme-color: #007aff;
+}
+
+/* Typography */
+:root {
+  --first-font: "Montserrat", sans-serif;
+  --second-font: "Open Sans", sans-serif;
+  --third-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --font-conf-size: 18px;
+  --smaller-font-size: 0.75rem;
+}
+
+/* Other */
+:root {
+  --radius-button: 8px;
+  --radius-small: 2px;
+  --radius-medium: 5px;
+  --radius-large: 10px;
+}
+
+.error-message {
+  background-color: var(--alert-medium);
+  color: var(--white);
+  padding: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 3px;
+  opacity: 0.9;
+  font-family: var(--third-font);
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  position: absolute;
+}
+
+.success-message {
+  background-color: var(--success-main);
+  align-items: center;
+  text-align: center;
+  width: auto;
+  position: absolute;
+  color: var(--success-light);
+  padding: 14px;
+  margin-top: 10px auto;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  opacity: 0.9;
+  font-family: var(--third-font);
+  margin-bottom: 30px;
+}
+
+
+
+.warning-message {
+  background-color: var(--mine);
+  color: var(--smoke);
+  padding: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 3px;
+  opacity: 0.9;
+  font-family: var(--third-font);
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  position: absolute;
+}
+
+.info-message {
+  background-color: var(--accent-dark);
+  color: var(--white);
+  padding: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 3px;
+  opacity: 0.9;
+  font-family: var(--third-font);
+  margin-bottom: 30px;
+}
+
+
+.loading-icon {
+  /* Styles for the loading icon container */
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  size: 16px;
+  align-items: center;
+}
+
+
+:root{
+  --white: #ffffff;
+  --white_1 : #a5aaad;
+  --white_2 : #d9d9d9;
+  --white_3 : #f3f4f6;
+  --green_1: #3ea175;
+  --green_text: #1cab94;
+  --bleu_1: #2e4a66;
+  --bleu_2: #469cac;
+  --red_1: #cc3d38;
+  --yellow_1: #a98921;
+  --black: #020509;
+  --black__2: #020509d8;
+
+  --green_2: #3ea175;
+  --black__1: rgba(62,131,117,0.3);
+}
+/*general styling*/
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--black__2) !important;
+}
+
+body{
+  background-color: #fffffb;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  width: 100% !important;
+/*     font-family: "Lato" , sans-serif;
+*/}
+
+
+.btn{
+  outline: none;
+  background-color: var(--black);
+  color: var(--white) !important;
+  border: none;
+  padding:  0.7rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 5%;
+}
+
+.justify_start{
+  text-align: start !important;
+}
+.justify_center{
+  text-align: center !important;
+}
+.justify_end{
+  text-align: end !important;
+}
+
+
+.text_primaru_p{
+  color: var(--white_1);
+  font-size: 14px;
+  font-weight: 700;
+}
+.font__bold{
+font-weight: 700;
+}
+
+.Text_title{
+  color: var(--bleu_1);
+}
+.text_lightblue{
+  color: var(--bleu_2);
+}
+.text_red{
+  color: var(--red_1);
+}
+.text_yellow{
+  color: var(--yellow_1);
+}
+.text_green{
+  color: var(--green_text);
+}
+
+
+.containerDash{
+  padding-top: 5.5rem;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+  "sidebar nav nav nav"
+  "sidebar main main main";
+}
+.containerDash{
+  padding-top: 5.5rem;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.25fr 0.8fr;
+  grid-template-rows:  0.2fr 3fr;
+  grid-template-areas: 
+  "sidebar nav "
+  "sidebar main ";
+}
+@media only screen and (max-width: 900px){
+  .containerDash{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas: 
+      "nav"
+      "main";
+  }
+}

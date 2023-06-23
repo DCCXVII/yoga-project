@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--first-font);
+  }
+  
+  
+  .signup-container {
+    /* background-color: var(--white);
+    border: 1px solid var(--accent-light);
+    border-radius: var(--radius-medium);
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 50px;
+    text-align: left;
+    font-family: var(--first-font); */
+    background-color: var(--white);
+    /* border: 1px solid var(--accent-light);
+    border-radius: var(--radius-medium); */
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 30px;
+    text-align: left;
+    font-family: var(--first-font);
+  }
+  
+  #signup-steps {
+    color: var(--dawn);
+    font-weight: normal;
+    margin-bottom: 1px;
+    text-align: left;
+    font-family: var(--second-font);
+    font-size: var(--normal-font-size);
+  }
+  
+  #signup-title {
+    text-transform: uppercase;
+    font-size: 37px;
+    padding-bottom: 5px;
+    letter-spacing: 0.07em;
+    line-height: 108%;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--first-font);
+  }
+  
+  #description-1 {
+    color: var(--charcoal);
+    font-family: var(--second-font);
+    font-size: var(--normal-font-size);
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .span {
+    font-weight: bold;
+    font-family: var(--second-font);
+    font-size: var(--h3-font-size);
+  }
+  
+  .signup-input {
+    font-weight: 200;
+    line-height: 170%;
+    font-family: var(--second-font);
+    letter-spacing: normal;
+    max-width: 100%;
+    font-size: 18px;
+    white-space: pre-line;
+    word-break: break-word;
+    color: var(--primary);
+    width: 100%;
+    max-height: 50px;
+    background: rgb(255, 255, 255);
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding: 12px 16px 11px;
+  }
+  
+  .signup-label {
+    font-family: var(--second-font);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 170%;
+    letter-spacing: normal;
+    white-space: pre-line;
+    word-break: break-word;
+    color: rgb(59, 59, 59);
+    line-height: 104%;
+    font-weight: 400;
+
+  }
+  
+  .button {
+    width: 100%;
+    margin-top: 22px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 48px;
+    min-width: 100px;
+    transition: all 0.15s ease-in-out 0s;
+    font-family: Arquitecta, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 140%;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--first-font);
+  }
+  
+  .button:hover {
+    background-color: var(--chicago);
+    transition: 0.4s all ease-out;
+  }
+  
+  #signup-google-button {
+    background-color: var(--smoke);
+    color: var(--primary);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #signup-google-button .icon-google {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  #signup-google-button:hover {
+    background-color: var(--mercury);
+  }
+  
+  .icon-google {
+    margin-right: 10px;
+  }
+  
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+  }
+  
+  .hr-text:before {
+    content: "";
+    background: var(--dawn);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.5px;
+  }
+  
+  .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: var(--chicago);
+    background-color: var(--white);
+    font-family: var(--second-font);
+    font-size: var(--normal-font-size);
+    font-weight: normal;
+  }
+  
+  .signup-google-button__icon{
+    margin-right: 20px;
+  }
+  .check-password {
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-family: var(--second-font);
+    font-size: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .error-line{
+    font-size: 13px;
+    
+    color: red;
+    font-family: var(--third-font);
+    margin-left: 7px;
+    margin-top: 3px;
+  }
+  
+  .signup-input-container {
+    margin-bottom: 16px;
+  }
+  
+   /* Media queries */
+   @media (max-width: 767px) {
+    .signup-container {
+      padding: 20px;
+    }
+  
+    #signup-title {
+      font-size: var(--h2-font-size);
+    }
+  
+    #description-1 {
+        font-size: var(--h3-font-size);
+    }
+  
+  .signup-input {
+  width: 100%;
+  }
+  
+  #signup-google-button {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+  
+  #signup-button {
+  width: 100%;
+  }
+  }

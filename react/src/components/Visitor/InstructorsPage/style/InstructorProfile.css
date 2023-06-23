@@ -1,0 +1,152 @@
+.profiles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profiles-background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: 0;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.profiles-info-left {
+  float: left;
+}
+
+.profiles-image {
+  position: relative;
+  border-radius: 50%;
+}
+
+.profiles-image-img {
+  width: 217px;
+  height: 217px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.profiles-info {
+  display: flex;
+  position: static;
+  left: 60px; 
+  margin-right: auto;
+  margin-left: 100px;
+}
+
+.profiles-image {
+  margin-right: 20px;
+  top: 0;
+  margin-top: -100px;
+  
+}
+
+.profiles-description {
+  flex-grow: 1;
+  margin-top: 24px;
+  margin-left: 87px;
+}
+
+.profiles-description p {
+  width: 90%;
+  line-height: 2;
+  font-weight: 300;
+  text-align: left;
+  color: #000;
+  font-family: var(--third-font);
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.background-instru-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+
+.profiles-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the profiles-name div */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  
+}
+
+.profiles-name h2 {
+  font-size: var(--h1-font-size);
+  color: white;
+  margin-bottom: 16px; /* Reset the default margin */
+  letter-spacing: 6px;
+}
+
+.social-link-container {
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-right: 16px;
+  transition: opacity 0.3s ease;
+  color:#fff;
+  transition: opacity 0.3s ease;
+}
+
+.social-link-container .social-links {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.social-link-container .social-links .social-icon-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.social-link-container .social-links:hover .social-icon {
+  opacity: 0;
+}
+
+.social-link-container .social-links:hover .social-icon-hover {
+  opacity: 1;
+}
+
+
+.consultation2-btn2 {
+  display: block;
+  margin-top: 154px;
+  margin-left: -236px;
+  transition: all 0.15s ease-in-out 0s;
+  font-size: 1.09rem;
+  padding: 12px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--first-font);
+}
+
+.consultation2-btn2:hover {
+  background-color: var(--chicago);
+
+  transition: 0.4s all ease-out;
+}
